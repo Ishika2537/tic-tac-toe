@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  height: 100vh;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 255, 0.2), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(255, 0, 255, 0.2), transparent 40%),
+              #0e0101ff; /* dark base */
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(8, 3, 7);
+    height: 55px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto' , sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3, 10vw);
+    margin: 6vw;
+    padding: 1vw;
+    font-family: 'Roboto' , sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 3px solid yellowgreen;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(70, 101, 108);
+}
+
+.info{
+font-size: 25px;
+}
+
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* margin: 2rem;
+    padding: 0 34px; */
+}
+
+.gameInfo h1{
+    font-size: 2rem;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 1em;
+    padding: 0 1em;
+    background-color: yellowgreen;
+    font-family: 'Baloo Bhaina 2', sans-serif ;
+    font-weight: bolder;
+    font-size: medium;
+    font-style: normal;
+    border-radius: 6px;
+}
+
+.line{
+    background-color: rgb(218, 120, 202);
+    width: 0;
+    height: 5px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+         grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
