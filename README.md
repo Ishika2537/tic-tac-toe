@@ -1,18 +1,25 @@
-🟢 Tic Tac Toe Game
-A simple and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript. Challenge a friend or play against the computer in this classic game!
+**<h2>Tic-Tac-Toe Web Game:</h2>**
 
-🔧 Features:
+A simple, classic game of Tic-Tac-Toe built with HTML, CSS, and JavaScript. Challenge a friend and see who can get three in a row first!
 
-      `Two-player mode
+---
 
-      Win detection logic
+**<h3>How to Play:</h3>**
 
-      Clean and responsive layout
+**1.Open the game:** Just open the index.html file in your browser.
 
-🛠️ Tech Stack:
+**2.Take turns:** Player "X" goes first. Click an empty square to place your mark.
 
-      HTML – structure
+**3.Win or Draw:** The first player to get three marks in a row (horizontally, vertically, or diagonally) wins! If all squares are filled and nobody has won, the game is a draw.
 
-      CSS – styling and layout
+**4.Reset:** Click the "Reset Game" button to start a new round.
 
-      JavaScript – game logic and interactivity
+---
+
+**<h3>Tech Stack:</h3>**
+
+- **HTML:** For the game structure.
+
+- **CSS:** For all the styling.
+
+- **JavaScript:** For the game logic.
